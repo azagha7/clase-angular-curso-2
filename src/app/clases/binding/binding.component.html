@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2><strong>Interpolación / Binding</strong></h2>
+        </div>
+        <div class="col-12">
+            <p>Los binding son una herramienta de angular que nos permite hacer enlaces entre nuestra plantilla (html) y nuestro ts. Existen tres tipo sde binding|</p>
+            <ul>
+                <li>Interpolación</li>
+                <li>Property binding</li>
+                <li>Event Binding</li>
+                <li>Two-way Binding</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="col-9">
+            <h2><strong>Interpolación</strong></h2>
+            <p>La interpolación es un mecanismo para poder sustituir una expresión por un valor y nos apoyaremos de los caracteres de las llaves "{{ '{' }}" y "{{ '}' }}"</p>
+        </div>
+        <div class="col-3">
+            <h2>Ejemplo</h2>
+            <ul>
+                <li>{{unaVariable}}</li>
+                <li>{{2+2}} => Sin interpolacion es 2+2</li>
+                <li>{{retornarMensaje()}}</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <h3>Property Binding</h3>
+        </div>
+        <div class="col-9">
+            <p>Es el mecanismo de angular para definir o enlazar propiedades del html desde nuestro código logico (ts)</p>
+        </div>
+        <div class="col-3">
+            <h2>Ejemplo</h2>
+            <ul>
+                <li><input type="text" class="form-control" [disabled]="unaVariableProperty"></li>
+                <li><img [src]="unaImagen" alt="" [style.width.px]="100"></li>
+                <li>
+                    <button class="btn btn-primary" [hidden]="!unHidding"></button>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
